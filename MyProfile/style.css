@@ -1,14 +1,26 @@
+/*共通スタイル*/
 body{
   color:#000000;
   background-color:#ffffff;
-  font-size:18px;
   font-family: "Noto Sans JP", sans-serif;
 }
 
 .section-title{
-  font-size:34px;
   text-align:center;
 }
+
+
+/*画面幅が768px以上の時*/
+@media screen and (min-width:768px){
+  /*PC用のスタイル*/
+body{
+  font-size:18px;
+}
+
+.section-title{
+  font-size:34px;
+}
+
 
 /*ヘッダー*/
 header{
@@ -38,11 +50,13 @@ header > a{
 /*メインビジュアル*/
 #mainvisual{
   margin-top:20px;
+  width:100%;
 
 }
 
 #mainvisual > img{
-  width:100%;
+  max-width:100%;
+  width:0 auto;
 }
 
 /*ABOUT*/
@@ -75,17 +89,110 @@ margin-left:40px;
 /*Works*/
 #works{
   margin-top:60px;
-}
-
-#works > div{
-width:573px;
-display:flex;
-}
-
-.works-detail{
+  margin:0 auto;
   text-align: center;
 }
 
-.works.img{
-  width:33%;
+#works > div{
+  max-width:700px;
+  display:flex;
+  text-align: center;
+}
+
+
+.works-detail{
+  width:25%;
+}
+
+.works-img{
+  width:100%;
+}
+
+/*フッター*/
+footer{
+  margin-top:30px;
+  text-align: center;
+}
+
+}
+
+@media screen  and (max-width:767px){
+
+body{
+  min-width:375;
+  font-size:10px;
+}
+
+.section-title{
+  font-size:15px;
+}
+
+  /*ヘッダー*/
+header{
+  max-width:727px;
+  margin:20px ;
+  display:flex;
+  justify-content:space-between;
+  text-align:center;
+}
+
+header > a{
+  font-size:20px;
+  font-weight:bold;
+  color:#000000;
+  text-decoration:none;
+  border:1px solid #000000;
+  padding:0px 20px 0px 20px;
+}
+
+#nav-pc > a{
+  font-size:20px;
+  font-weight:bold;
+  color:#000000;
+  text-decoration: none;
+  padding-left:20px;
+}
+#works > div{
+  display:block;
+}
+
+/*メインビジュアル*/
+#mainvisual{
+  max-width:767px;
+  margin-top:20px;
+
+}
+
+#mainvisual > img{
+  width:100%;
+}
+
+/*ABOUT*/
+#about{
+  margin:60px;
+}
+
+#about > div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100px;
+}
+
+#about > div > img{
+  /*画像の外枠*/
+  border-radius:100%;
+  height:100%;
+}
+
+.profile {
+margin-top:20px;
+}
+
+.profile > p{
+  margin-left:10px;
+  font-size: 13px;
+  font-weight:bold;
+}
+
 }
