@@ -1,0 +1,91 @@
+body{
+  color:#000000;
+  background-color:#ffffff;
+  font-size:18px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.section-title{
+  font-size:34px;
+  text-align:center;
+}
+
+/*ヘッダー*/
+header{
+  margin:20px 179px 0 179px;
+  display:flex;
+  justify-content:space-between;
+  text-align:center;
+}
+
+header > a{
+  font-size:34px;
+  font-weight:bold;
+  color:#000000;
+  text-decoration:none;
+  border:1px solid #000000;
+  padding:0px 20px 0px 20px;
+}
+
+#nav-pc > a{
+  font-size:34px;
+  font-weight:bold;
+  color:#000000;
+  text-decoration: none;
+  padding-left:20px;
+}
+
+/*メインビジュアル*/
+#mainvisual{
+  margin-top:20px;
+
+}
+
+#mainvisual > img{
+  width:100%;
+}
+
+/*ABOUT*/
+#about{
+  margin-top:60px;
+}
+
+#about > div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:200px;
+}
+
+#about > div > img{
+  /*画像の外枠*/
+  border-radius:100%;
+  height:100%;
+}
+
+.profile {
+margin-left:40px;
+}
+
+.profile > p{
+  font-size: 24px;
+  font-weight:bold;
+}
+
+/*Works*/
+#works{
+  margin-top:60px;
+}
+
+#works > div{
+width:573px;
+display:flex;
+}
+
+.works-detail{
+  text-align: center;
+}
+
+.works.img{
+  width:33%;
+}
