@@ -2,12 +2,77 @@
 body{
   color:#000000;
   background-color:#ffffff;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color:#F5EBEB;
 }
 
 .section-title{
   text-align:center;
 }
+
+/*top*/
+#pagetop{
+  display:none;
+  position: fixed;
+  bottom: 38px;
+  right: 20px;
+
+  background-color: #800000;
+  padding:28px 24px;
+  border-radius: 50%;
+  font-family:"Noto Sans JP" , sans-serif ;
+
+}
+
+#pagetop > a {
+  color:#ffffff;
+  text-align:center;
+  text-decoration:none;
+}
+
+/*セクションのフェードイン*/
+section{
+  opacity:0;
+  transition:1s;
+}
+
+.fade-in{
+  opacity:1;
+}
+
+/*モーダル*/
+.modal{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background-color:rgba(0,0,0,0.8);
+  display:none;
+}
+
+.big-img{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width:80%;
+  max-width:800px;
+  margin:auto;
+}
+
+.close-btn{
+  position:absolute;
+  top:10px;
+  right:20px;
+  color:white;
+  font-size:40px;
+  text-decoration:none;
+}
+
 
 
 /*画面幅が768px以上の時*/
@@ -19,6 +84,8 @@ body{
 
 .section-title{
   font-size:34px;
+  margin-top:50px;
+  margin-bottom:50px;
 }
 
 
@@ -31,11 +98,10 @@ header{
 }
 
 header > a{
-  font-size:34px;
+  font-size:40px;
   font-weight:bold;
   color:#000000;
   text-decoration:none;
-  border:1px solid #000000;
   padding:0px 20px 0px 20px;
 }
 
@@ -54,7 +120,7 @@ header > a{
 
 }
 
-#mainvisual > img{
+.carouselImg{
   max-width:100%;
   width:0 auto;
 }
@@ -72,9 +138,10 @@ header > a{
 }
 
 #about > div > img{
-  /*画像の外枠*/
+  /*画像の外枠を入れたい*/
   border-radius:100%;
   height:100%;
+  max-width:200px;
 }
 
 .profile {
@@ -86,7 +153,11 @@ margin-left:40px;
   font-weight:bold;
 }
 
-/*Works*/
+.profile > ul {
+  list-style: none;
+}
+
+/*Hobby*/
 #works{
   margin-top:60px;
   margin:0 auto;
@@ -97,11 +168,19 @@ margin-left:40px;
   max-width:700px;
   display:flex;
   text-align: center;
+  margin:0 auto;
+  justify-content: space-around;
 }
 
 
 .works-detail{
   width:25%;
+  margin:0 auto;
+}
+
+.works-detail-center{
+  width:25%;
+  margin:0 20px;
 }
 
 .works-img{
@@ -129,7 +208,7 @@ body{
 
   /*ヘッダー*/
 header{
-  max-width:727px;
+  max-width:900px;
   margin:20px ;
   display:flex;
   justify-content:space-between;
@@ -151,9 +230,6 @@ header > a{
   color:#000000;
   text-decoration: none;
   padding-left:20px;
-}
-#works > div{
-  display:block;
 }
 
 /*メインビジュアル*/
@@ -193,6 +269,30 @@ margin-top:20px;
   margin-left:10px;
   font-size: 13px;
   font-weight:bold;
+}
+
+/*Works*/
+#works{
+  margin-top:60px;
+  margin:0 auto;
+  text-align: center;
+}
+
+#works > div{
+  display:block;
+  justify-content: center;
+}
+
+.works-img{
+  width:100%;
+  margin:20px 20px 0 20px;
+}
+
+
+/*フッター*/
+footer{
+  margin-top:30px;
+  text-align: center;
 }
 
 }
