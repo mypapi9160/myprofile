@@ -1,6 +1,6 @@
 /*共通スタイル*/
 body{
-  color:#000000;
+  color:#4d4d4d;
   background-color:#ffffff;
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
@@ -8,7 +8,12 @@ body{
   background-color:#F5EBEB;
 }
 
-.section-title{
+.section-title {
+  text-align:center;
+  font-weight:bold;
+}
+
+.sub-title {
   text-align:center;
 }
 
@@ -19,7 +24,7 @@ body{
   bottom: 38px;
   right: 20px;
 
-  background-color: #800000;
+  background-color: #867070;
   padding:28px 24px;
   border-radius: 50%;
   font-family:"Noto Sans JP" , sans-serif ;
@@ -100,7 +105,7 @@ header{
 header > a{
   font-size:40px;
   font-weight:bold;
-  color:#000000;
+  color:#4d4d4d;
   text-decoration:none;
   padding:0px 20px 0px 20px;
 }
@@ -108,7 +113,7 @@ header > a{
 #nav-pc > a{
   font-size:34px;
   font-weight:bold;
-  color:#000000;
+  color:#4d4d4d;
   text-decoration: none;
   padding-left:20px;
 }
@@ -125,9 +130,59 @@ header > a{
   width:0 auto;
 }
 
+/*Work*/
+
+#works{
+  margin-top:60px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+  margin:0 auto;
+}
+
+#works > div {
+  display:flex;
+  justify-content:space-around;
+}
+.works-item{
+  text-decoration:none;
+  text-align: center;
+}
+
+.works-name {
+  font-size:20px;
+  font-weight:bold;
+  color:#4d4d4d;
+  text-align: center;
+}
+
+.works-info {
+  color:#4d4d4d;
+  text-align: center;
+}
+
+.works-detail{
+  width:25%;
+}
+
+.works-detail-center{
+  width:25%;
+}
+
+.works-item{
+  max-width:700px;
+  display:flex;
+  text-align: center;
+  margin:0 auto;
+  justify-content: space-around;
+}
+
 /*ABOUT*/
 #about{
   margin-top:60px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
 }
 
 #about > div{
@@ -158,32 +213,39 @@ margin-left:40px;
 }
 
 /*Hobby*/
-#works{
+#hobby{
   margin-top:60px;
+  padding-top: 50px;
+  padding-bottom: 80px;
   margin:0 auto;
   text-align: center;
 }
 
-#works > div{
-  max-width:700px;
-  display:flex;
+#hobby > div{
+  max-width:1000px;
   text-align: center;
   margin:0 auto;
+  display: flex;
   justify-content: space-around;
 }
 
 
-.works-detail{
+.hobby-detail{
   width:25%;
   margin:0 auto;
 }
 
-.works-detail-center{
+.hobby{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.hobby-detail-center{
   width:25%;
   margin:0 20px;
 }
 
-.works-img{
+.hobby-img{
   width:100%;
 }
 
@@ -218,7 +280,7 @@ header{
 header > a{
   font-size:20px;
   font-weight:bold;
-  color:#000000;
+  color:#4d4d4d;
   text-decoration:none;
   border:1px solid #000000;
   padding:0px 20px 0px 20px;
@@ -227,7 +289,7 @@ header > a{
 #nav-pc > a{
   font-size:20px;
   font-weight:bold;
-  color:#000000;
+  color:#4d4d4d;
   text-decoration: none;
   padding-left:20px;
 }
@@ -271,19 +333,19 @@ margin-top:20px;
   font-weight:bold;
 }
 
-/*Works*/
-#works{
+/*Hobby*/
+#hobby{
   margin-top:60px;
   margin:0 auto;
   text-align: center;
 }
 
-#works > div{
+#hobby > div{
   display:block;
   justify-content: center;
 }
 
-.works-img{
+.hobby-img{
   width:100%;
   margin:20px 20px 0 20px;
 }
