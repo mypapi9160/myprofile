@@ -59,7 +59,7 @@ $(function(){
   });
 
   //モーダル
-  $('.works-img').click(function(){
+  $('.hobby-img').click(function(){
     const imgSrc = $(this).attr('src');
     $('.big-img').attr('src', imgSrc);
     $('.modal').fadeIn();

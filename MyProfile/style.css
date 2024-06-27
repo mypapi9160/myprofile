@@ -1,6 +1,6 @@
 /*共通スタイル*/
 body{
-  color:#4d4d4d;
+  color:#7D5A5A;
   background-color:#ffffff;
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
@@ -32,7 +32,7 @@ body{
 }
 
 #pagetop > a {
-  color:#ffffff;
+  color:#7D5A5A;
   text-align:center;
   text-decoration:none;
 }
@@ -103,17 +103,17 @@ header{
 }
 
 header > a{
-  font-size:40px;
+  font-size:30px;
   font-weight:bold;
-  color:#4d4d4d;
+  color:#7D5A5A;
   text-decoration:none;
   padding:0px 20px 0px 20px;
 }
 
 #nav-pc > a{
-  font-size:34px;
+  font-size:25px;
   font-weight:bold;
-  color:#4d4d4d;
+  color:#7D5A5A;
   text-decoration: none;
   padding-left:20px;
 }
@@ -152,12 +152,12 @@ header > a{
 .works-name {
   font-size:20px;
   font-weight:bold;
-  color:#4d4d4d;
+  color:#7D5A5A;
   text-align: center;
 }
 
 .works-info {
-  color:#4d4d4d;
+  color:#7D5A5A;
   text-align: center;
 }
 
@@ -177,12 +177,19 @@ header > a{
   justify-content: space-around;
 }
 
+.works-img{
+  border-top-right-radius:60px;
+  border-top-left-radius: 60px;
+  border:solid 4px #F1D1D1;
+}
+
+
 /*ABOUT*/
 #about{
   margin-top:60px;
   padding-top: 50px;
   padding-bottom: 80px;
-  background-color: #ffffff;
+  background-color: #F9F5F6;
 }
 
 #about > div{
@@ -212,6 +219,46 @@ margin-left:40px;
   list-style: none;
 }
 
+/*Skill*/
+
+#skill{
+  margin-top:60px;
+  padding: 50px;
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+  text-align: center;
+}
+
+.skill-item {
+  width: 48%;
+  margin-bottom: 50px;
+}
+
+.skill-img > img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.skill-body {
+  flex: 1;
+}
+
+.skill-name {
+  margin-bottom: 10px;
+}
+
+.skill-text {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
 /*Hobby*/
 #hobby{
   margin-top:60px;
@@ -219,6 +266,7 @@ margin-left:40px;
   padding-bottom: 80px;
   margin:0 auto;
   text-align: center;
+  background-color: #F9F5F6;
 }
 
 #hobby > div{
@@ -247,6 +295,14 @@ margin-left:40px;
 
 .hobby-img{
   width:100%;
+}
+
+/*Contact*/
+#contact{
+  margin: 2em auto;
+	padding:2em;/*内側余白*/
+	border:double 7px #DED69B;/*線の種類・太さ・色*/
+}
 }
 
 /*フッター*/
@@ -280,7 +336,7 @@ header{
 header > a{
   font-size:20px;
   font-weight:bold;
-  color:#4d4d4d;
+  color:#7D5A5A;
   text-decoration:none;
   border:1px solid #000000;
   padding:0px 20px 0px 20px;
@@ -289,7 +345,7 @@ header > a{
 #nav-pc > a{
   font-size:20px;
   font-weight:bold;
-  color:#4d4d4d;
+  color:#7D5A5A;
   text-decoration: none;
   padding-left:20px;
 }
