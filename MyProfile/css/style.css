@@ -11,10 +11,12 @@ body{
 .section-title {
   text-align:center;
   font-weight:bold;
+
 }
 
 .sub-title {
   text-align:center;
+  margin-top:70px;
 }
 
 /*top*/
@@ -32,7 +34,7 @@ body{
 }
 
 #pagetop > a {
-  color:#7D5A5A;
+  color:#fff;
   text-align:center;
   text-decoration:none;
 }
@@ -88,7 +90,7 @@ body{
 }
 
 .section-title{
-  font-size:34px;
+  font-size:50px;
   margin-top:50px;
   margin-bottom:50px;
 }
@@ -103,7 +105,7 @@ header{
 }
 
 header > a{
-  font-size:30px;
+  font-size:35px;
   font-weight:bold;
   color:#7D5A5A;
   text-decoration:none;
@@ -128,6 +130,16 @@ header > a{
 .carouselImg{
   max-width:100%;
   width:0 auto;
+}
+
+/*Message*/
+#message{
+  margin:200px 0 50px 0;
+}
+
+#message > p {
+  text-align: center;
+
 }
 
 /*Work*/
@@ -198,13 +210,16 @@ header > a{
   /* 背景色は好きな色で */
   background-color: #C1A3A3;
   /* やや窮屈なのでpadding取っときました。（お好みで数値調整して下さい） */
-  padding: 4% 4% 12% 4%;
+  padding: 20% 4% 12% 4%;
 }
 
 
 /*ABOUT*/
 #about{
-  padding:60px 300px 60px 300px;
+  margin:20px;
+  padding-left:15%;
+  padding-right:15%;
+  position: relative;
 }
 
 
@@ -213,21 +228,17 @@ header > a{
   background-color:#7D5A5A;
   padding: 50px 0 60px 0;
   text-align: center;
-  margin:0,auto;
   border-radius: 100px 0 0 0 ;
   align-items: center;
   justify-content: center;
-  
 }
 
 .myprofile > img{
   border-radius:100%;
-  height:100%;
-  max-width:350px;
-  float:right;
-  position: relative;
-  top:-300px;
-  left:150px;
+  position:absolute;
+  bottom:1%;
+  left:65%;
+  height:80%;
 }
 
 
@@ -307,6 +318,8 @@ header > a{
 .hobby{
   font-size:20px;
   font-weight:bold;
+  color:#fff;
+  background-color: #7D5A5A;
 }
 
 .hobby-detail-center{
@@ -395,7 +408,17 @@ footer{
 
 .home-link {
   text-align: center;
+  background-color: #7D5A5A;
 }
+
+.home-link > a{
+  text-decoration: none;
+  color:#fff;
+  max-width: 767px;
+  width:30%;
+
+}
+
 
 /*media Queries 767*/
 
@@ -409,29 +432,57 @@ body{
 }
 
 .section-title{
-  font-size:15px;
+  font-size:30px;
 }
+
+.sub-title{
+  font-size:20px;
+}
+
+/*top*/
+#pagetop{
+  display:none;
+  position: fixed;
+  bottom: 38px;
+  right: 60px;
+
+  background-color: #867070;
+  padding:28px 24px;
+  border-radius: 50%;
+  font-family:"Noto Sans JP" , sans-serif ;
+
+}
+
+#pagetop > a {
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+}
+
 
   /*ヘッダー*/
 header{
   max-width:900px;
   margin:20px ;
-  display:flex;
-  justify-content:space-between;
   text-align:center;
 }
 
 header > a{
-  font-size:20px;
+  font-size:35px;
   font-weight:bold;
   color:#7D5A5A;
   text-decoration:none;
-  border:1px solid #000000;
   padding:0px 20px 0px 20px;
+  text-align:center;
+  margin:0,auto;
+}
+
+#nav-pc{
+  margin-top:20px;
 }
 
 #nav-pc > a{
-  font-size:20px;
+  font-size:15px;
   font-weight:bold;
   color:#7D5A5A;
   text-decoration: none;
@@ -445,42 +496,221 @@ header > a{
 
 }
 
-#mainvisual > img{
+.carouselImg{
+  max-width:100%;
+  margin:0 auto;
+}
+
+/*Message*/
+#message{
+  margin:150px 20px 50px 20px;
+}
+
+#message > p {
+  text-align: center;
+}
+
+
+/*Work*/
+
+#works{
+  margin-top:60px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+  margin:0 auto;
+}
+
+#works > div {
+  display:flex;
+  justify-content:space-around;
+}
+.works-item{
+  text-decoration:none;
+  text-align: center;
+}
+
+.works-name {
+  font-size:12px;
+  font-weight:bold;
+  color:#F3E1E1;
+  text-align: center;
+}
+
+.works-info {
+  color:#F3E1E1;
+  text-align: center;
+  margin:0;
+}
+
+.works-detail{
+  width:25%;
+  border-radius: 9999px 9999px 0 0;
+
+  border:solid 4px #C1A3A3;
+  /*画像がはみ出ると、画像の形に対応してしまうのではみ出た分を見えなくする*/
+  overflow:hidden;
+  /*背景色は好きな色で*/
+  background-color: #fff;
+  padding-bottom:0%;
+  /*要素を下で揃える*/
+  align-self:flex-end;
+}
+
+.works-detail-center{
+  width:25%;
+}
+
+.works-item{
+  max-width:700px;
+  display:flex;
+  text-align: center;
+  margin:0 auto;
+  justify-content: space-around;
+}
+
+.works-img{
   width:100%;
 }
 
+/* 新しくdiv追加（works-nameとinfoを囲みその上の曲線を表現） */
+.inner-item{
+  border-radius: 100% 100% 0 0;
+  /* 背景色は好きな色で */
+  background-color: #C1A3A3;
+  /* やや窮屈なのでpadding取っときました。（お好みで数値調整して下さい） */
+  padding: 15% 4% 12% 4%;
+}
+
+
 /*ABOUT*/
 #about{
-  margin:60px;
+  padding-left:4%;
+  padding-right:4%;
+  position: relative;
 }
 
-#about > div{
-  display:flex;
+
+.about-class{
+  color:#F9F5F6;
+  background-color:#7D5A5A;
+  padding: 40px 0 50px 0;
+  border-radius: 100px 0 0 0 ;
   align-items: center;
   justify-content: center;
-  height:100px;
+  
 }
 
-#about > div > img{
-  /*画像の外枠*/
+.myprofile > img{
   border-radius:100%;
-  height:100%;
+  position: absolute;
+  bottom:1%;
+  left:58%;
+  height:60%;
 }
 
-.profile {
-margin-top:20px;
-}
 
 .profile > p{
-  margin-left:10px;
-  font-size: 13px;
+  font-size: 24px;
+  font-weight:bold;
+  margin-left:35px;
+}
+
+.profile > ul {
+  list-style: none;
+  margin-left:-10px;
+}
+
+/*Skill*/
+
+#skill{
+  margin-top:60px;
+  padding: 50px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin:0,auto;
+
+}
+
+.skill-item {
+  width: 48%;
+  margin-bottom: 50px;
+}
+
+.skill-img > img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.skill-body {
+  flex: 1;
+}
+
+.skill-name {
+  margin-bottom: 10px;
+  font-size:20px;
   font-weight:bold;
 }
+
+.skill-text {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/*Hobby
+#hobby{
+  margin-top:60px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  margin:0 auto;
+  text-align: center;
+  background-color: #F9F5F6;
+}
+
+#hobby > div{
+  max-width:1000px;
+  text-align: center;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.hobby-detail{
+  width:25%;
+  margin:0 auto;
+}
+
+.hobby{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.hobby-detail-center{
+  width:25%;
+  margin:0 20px;
+}
+
+.hobby-img{
+  width:100%;
+}
+
+*/
+
 
 /*Hobby*/
 #hobby{
   margin-top:60px;
-  margin:0 auto;
+  margin-left:7%;
+  margin-right:7%;
+  max-width:767px;
   text-align: center;
 }
 
@@ -491,7 +721,31 @@ margin-top:20px;
 
 .hobby-img{
   width:100%;
-  margin:20px 20px 0 20px;
+  text-align: center;
+}
+
+.hobby{
+  font-weight:bold;
+  font-size:20px;
+  color:#fff;
+  background-color: #7D5A5A;
+}
+
+/*Contact*/
+#contact{
+  max-width:767px;
+  margin: 2em auto;
+	padding:2em;/*内側余白*/
+	border:double 7px #7D5A5A;/*線の種類・太さ・色*/
+}
+
+.contact-detail{
+  max-width: 100%;
+  text-align: center;
+  margin:0 ,auto;
+  color:#7D5A5A;
+
+
 }
 
 
@@ -506,20 +760,50 @@ footer{
     padding: 50px 0;
   }
 
+  .article-title{
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .article-body{
+    margin:7%;
+  }
+
+
   .article-body h3 {
     font-size: 16px;
     padding-left: .8em;
+    text-align: center;
   }
 
   .article-body h3:not(:first-child) {
     margin-top: 30px;
+    text-align:center;
   }
 
   .article-body p {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 20px;
+    text-align:center;
   }
 
+  .article-body > p >img{
+
+    max-width:767px;
+    width:100%;
+  }
+
+  .home-link{
+    text-align: center;
+    background-color: #7D5A5A;
+  }
+
+  .home-link > a{
+    text-decoration: none;
+    color:#fff;
+    max-width: 767px;
+    width:30%;
+  }
 
 }
